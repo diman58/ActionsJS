@@ -177,7 +177,8 @@ public class ActionsDraggable {
 
         try {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            Path path = Paths.get("C:\\Users\\Dmitrii_Tsarev\\IdeaProjects\\asd");
+            Path path = Paths.get("src/main/resources");
+            //C:\Users\Dmitrii_Tsarev\IdeaProjects\asd
             FileUtils.copyFileToDirectory(screenshot, new File(path.toAbsolutePath().toString()));
         } catch (Exception e) {
             e.printStackTrace();
